@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".fragment.DoiMatKhauFragment">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="550px"
+        android:layout_height="550px"
+        android:src="@drawable/img_change_password"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_current_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Mật khẩu hiện tại"
+        app:hintTextColor="@color/primary_color"
+        android:textColorHint="@color/primary_color"
+        app:boxStrokeColor="@color/primary_color"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_current_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Mật khẩu mới"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/primary_color"
+        android:textColorHint="@color/primary_color"
+        app:boxStrokeColor="@color/primary_color">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Nhập lại mật khẩu"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/primary_color"
+        android:textColorHint="@color/primary_color"
+        app:boxStrokeColor="@color/primary_color">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/check_trung_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_change_password"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login"
+        android:text="Thay đổi"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/primary_color" />
+
+</LinearLayout>
